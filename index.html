@@ -1,349 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Subam Shrestha | First-year Computer Science student</title>
-  <meta name="description" content="Personal site of Subam Shrestha, a first-year Computer Science student learning Python and web development, and exploring AI/ML.">
-  <meta name="color-scheme" content="light dark">
-
-  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
-
-  <!-- Fonts: IBM Plex Sans for text, IBM Plex Mono only for the small code snippet.
-       If the fonts can't load, the CSS falls back to your system fonts. -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Subam Shrestha — CS student, building toward AI/ML</title>
+<meta name="description" content="Portfolio of Subam Shrestha, first-year Computer Science student from Nepal exploring AI/ML, Python and the web.">
+<meta name="theme-color" content="#0b0b0d">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
 </head>
+<body class="intro">
+<header class="nav"><a class="logo" href="#home" aria-label="Subam Shrestha">SS</a>
+<nav aria-label="Main"><a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#journey">Journey</a><a href="#contact">Contact</a></nav></header>
 
-<body>
-  <!-- Icon sprite: defined once here, reused with <use href="#icon-github"> -->
-  <svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
-    <symbol id="icon-github" viewBox="0 0 16 16">
-      <path fill="currentColor" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/>
-    </symbol>
-  </svg>
+<main>
+<section class="hero" id="home">
+ <div class="hero__text">
+  <p class="label rv">Subam Shrestha · Bharatpur, Nepal</p>
+  <h1 class="rv">I build ideas<br>into <em>real things.</em></h1>
+  <p class="lead rv">I'm a first-year Computer Science student exploring AI/ML, software development and the web. I learn by building practical projects, and by improving them.</p>
+  <div class="cta rv"><a class="btn btn--main" href="#projects">View My Work →</a><a class="btn" href="#contact">Get in Touch</a></div>
+  <dl class="facts rv"><div><dt>01</dt><dd>Year of CS</dd></div><div><dt>Exploring</dt><dd>Python · AI/ML · Web</dd></div></dl>
+ </div>
+ <div class="stage" id="stage"><canvas id="sword" aria-label="Interactive 3D katana. Drag to rotate, click to slash."></canvas>
+ <p class="hint">Drag to inspect · Click to slash</p></div>
+</section>
 
-  <a class="skip-link" href="#main">Skip to content</a>
+<section class="sec" id="about"><p class="label rv">01 — About</p>
+ <div class="cols"><h2 class="rv">Curious first, <em>capable</em> next.</h2>
+ <div class="rv"><p>I'm Subam, studying Computer Science in Nepal. I started with fundamentals and Python, and I'm moving toward machine learning while building things with the web along the way.</p>
+ <p>I'm early in my journey and I'd rather show honest, working projects than big claims. This site grows as I do.</p></div></div>
+</section>
 
-  <!-- ============ NAVIGATION ============ -->
-  <header class="site-header" id="site-header">
-    <nav class="nav container" aria-label="Main">
-      <a class="nav__brand" href="#home">Subam Shrestha</a>
+<section class="sec" id="projects"><p class="label rv">02 — Projects</p><h2 class="rv">Things I've built.</h2>
+ <div class="list">
+  <a class="proj rv" href="https://github.com/subam-shrestha/roadmap-site" target="_blank" rel="noopener"><span class="n">01</span><div><h3>Roadmap App</h3><p>A personal learning and progress-tracking application.</p></div><span class="tags">HTML · CSS · JavaScript</span><span class="go">GitHub ↗</span></a>
+  <a class="proj rv" href="https://github.com/subam-shrestha/python-learning-projects" target="_blank" rel="noopener"><span class="n">02</span><div><h3>Python Projects</h3><p>Practical programs built while learning: Calculator, Fortune Teller, Game Arcade, Password Checker, Contact Manager and To-Do List.</p></div><span class="tags">Python</span><span class="go">GitHub ↗</span></a>
+  <a class="proj rv" href="https://github.com/subam-shrestha" target="_blank" rel="noopener"><span class="n">03</span><div><h3>This Website</h3><p>Minimal design, interaction and front-end work, with a 3D sword rendered in Three.js.</p></div><span class="tags">Three.js · JavaScript · CSS</span><span class="go">GitHub ↗</span></a>
+ </div>
+</section>
 
-      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
-        <span class="visually-hidden">Menu</span>
-        <span class="nav__toggle-bars" aria-hidden="true"></span>
-      </button>
+<section class="sec" id="journey"><p class="label rv">03 — Journey</p><h2 class="rv">One step at a time.</h2>
+ <ol class="steps">
+  <li class="rv"><b>CS fundamentals</b><span>Where it started.</span></li>
+  <li class="rv"><b>Python</b><span>Small programs, then bigger ones.</span></li>
+  <li class="rv"><b>Web development</b><span>Roadmap app and this site.</span></li>
+  <li class="rv now"><b>AI / ML</b><span>Now exploring.</span></li>
+  <!-- Add future milestones as new <li class="rv"> items -->
+ </ol>
+ <p class="label rv">Currently exploring</p><p class="tools rv">Python · AI/ML · Web Development · CS Fundamentals</p>
+</section>
 
-      <div class="nav__menu" id="nav-menu">
-        <ul class="nav__links">
-          <li><a href="#home" class="nav__link">Home</a></li>
-          <li><a href="#about" class="nav__link">About</a></li>
-          <li><a href="#projects" class="nav__link">Projects</a></li>
-          <li><a href="#journey" class="nav__link">Journey</a></li>
-          <li><a href="#contact" class="nav__link">Contact</a></li>
-        </ul>
-        <a class="nav__github" href="https://github.com/subam-shrestha" target="_blank" rel="noopener noreferrer">
-          <svg class="icon" aria-hidden="true"><use href="#icon-github"></use></svg>
-          <span class="visually-hidden">GitHub profile (opens in a new tab)</span>
-        </a>
-      </div>
-    </nav>
-  </header>
-
-  <main id="main">
-
-    <!-- ============ HERO ============ -->
-    <section class="hero" id="home" aria-labelledby="hero-title">
-      <div class="container hero__inner">
-        <div class="hero__content">
-          <h1 class="hero__title" id="hero-title">Subam Shrestha</h1>
-          <p class="hero__lead">First-year Computer Science student building my foundation in software development and exploring AI/ML.</p>
-          <p class="hero__sub">I learn by building projects. Most of what's here is small, and all of it is real: programs I wrote to understand one idea at a time.</p>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="#projects">View projects</a>
-            <a class="btn" href="https://github.com/subam-shrestha" target="_blank" rel="noopener noreferrer">
-              <svg class="icon" aria-hidden="true"><use href="#icon-github"></use></svg>
-              GitHub
-              <span class="visually-hidden">(opens in a new tab)</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- A small, honest snippet: where I am, written as Python -->
-        <figure class="code-card" aria-label="A short Python snippet describing what I am learning">
-          <figcaption class="code-card__bar">learning.py</figcaption>
-          <pre class="code-card__pre"><code><span class="code-line"><span class="tok-comment"># where I am right now</span></span>
-<span class="code-line">student = <span class="tok-string">"Subam Shrestha"</span></span>
-<span class="code-line">studying = <span class="tok-string">"Computer Science"</span></span>
-<span class="code-line"></span>
-<span class="code-line">now = [<span class="tok-string">"Python"</span>, <span class="tok-string">"Git &amp; GitHub"</span>, <span class="tok-string">"web basics"</span>]</span>
-<span class="code-line">up_next = [<span class="tok-string">"OOP"</span>, <span class="tok-string">"algorithms"</span>]</span>
-<span class="code-line">exploring = [<span class="tok-string">"AI/ML"</span>]</span>
-<span class="code-line"></span>
-<span class="code-line"><span class="tok-keyword">while</span> <span class="tok-keyword">True</span>:</span>
-<span class="code-line">    learn()</span>
-<span class="code-line">    build()</span></code></pre>
-        </figure>
-      </div>
-    </section>
-
-    <!-- ============ ABOUT ============ -->
-    <section class="section" id="about" aria-labelledby="about-title">
-      <div class="container section__inner">
-        <h2 class="section__title" id="about-title">About</h2>
-        <div class="section__body prose" data-reveal>
-          <p class="prose__lead">I'm a first-year bachelor's student studying Computer Science, and right now I'm working on the fundamentals.</p>
-          <p>I started with Python through Harvard's CS50P course, and I try to turn each new idea into a small program that actually runs. From there I've been moving into data structures, Git and GitHub, and the basics of building for the web.</p>
-          <p>My longer-term interest is AI and machine learning. I don't want to skip ahead to it, so for now it's a direction I'm heading in rather than something I claim to know. The plan is to get comfortable with programming, algorithms and data structures first.</p>
-          <p>This site is a snapshot of where I am today. I'll keep updating it as I learn.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ CURRENTLY LEARNING ============ -->
-    <section class="section" id="learning" aria-labelledby="learning-title">
-      <div class="container section__inner">
-        <h2 class="section__title" id="learning-title">Currently learning</h2>
-        <div class="section__body" data-reveal>
-          <p class="section__intro">A plain look at what I'm working on now, what comes next, and what I'm curious about. It's a plan, not a promise, and it will change as I learn.</p>
-
-          <div class="stages">
-            <article class="stage stage--now">
-              <h3 class="stage__title">Now</h3>
-              <ul class="stage__list">
-                <li><strong>Python</strong> following CS50P and building small programs</li>
-                <li><strong>Git &amp; GitHub</strong> committing and organising my work in repositories</li>
-                <li><strong>Web development</strong> HTML, CSS and JavaScript basics</li>
-                <li><strong>CS fundamentals</strong> lists, dictionaries and working with files</li>
-              </ul>
-            </article>
-
-            <article class="stage">
-              <h3 class="stage__title">Up next</h3>
-              <ul class="stage__list">
-                <li><strong>Object-oriented programming</strong> classes and objects</li>
-                <li><strong>Algorithms</strong> sorting and searching</li>
-                <li><strong>Problem solving</strong> easy practice problems</li>
-              </ul>
-            </article>
-
-            <article class="stage">
-              <h3 class="stage__title">Exploring</h3>
-              <ul class="stage__list">
-                <li><strong>APIs and databases</strong> connecting programs to real data</li>
-                <li><strong>Web frameworks</strong> Flask, and maybe Django</li>
-                <li><strong>AI/ML basics</strong> the direction I'm most curious about</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ PROJECTS ============ -->
-    <section class="section" id="projects" aria-labelledby="projects-title">
-      <div class="container section__inner">
-        <h2 class="section__title" id="projects-title">Projects</h2>
-
-        <div class="section__body">
-          <p class="section__intro" data-reveal>Small projects, described honestly. Each one exists to practise a specific idea, and together they show how my work is growing.</p>
-
-          <!-- Repository 1 -->
-          <article class="project" data-reveal>
-            <header class="project__header">
-              <h3 class="project__name">python-learning-projects</h3>
-              <ul class="tags" aria-label="Technologies">
-                <li>Python</li>
-                <li>Git</li>
-                <li>VS Code</li>
-                <li>CS50P</li>
-              </ul>
-            </header>
-            <p class="project__desc">The repository where I keep every Python program I write while learning. It's organised into foundations, games and projects folders, so you can follow my progress from the first scripts to the latest ones.</p>
-            <dl class="project__facts">
-              <div>
-                <dt>Why I built it</dt>
-                <dd>To learn by writing programs instead of only watching lectures.</dd>
-              </div>
-              <div>
-                <dt>What I learned</dt>
-                <dd>Variables, control flow, loops, functions, exception handling, lists, dictionaries and reading and writing files.</dd>
-              </div>
-            </dl>
-            <a class="project__link" href="https://github.com/subam-shrestha/python-learning-projects" target="_blank" rel="noopener noreferrer">
-              View on GitHub
-              <span class="visually-hidden">: python-learning-projects (opens in a new tab)</span>
-            </a>
-          </article>
-
-          <!-- Repository 2 -->
-          <article class="project" data-reveal>
-            <header class="project__header">
-              <h3 class="project__name">roadmap-site</h3>
-              <ul class="tags" aria-label="Technologies">
-                <li>HTML</li>
-                <li>Git</li>
-              </ul>
-            </header>
-            <p class="project__desc">A website project built around a single HTML page, with a separate backend folder. The repository also uses Git hooks (Husky) and commit-message linting, so it's where I started practising a more careful Git workflow.</p>
-            <dl class="project__facts">
-              <div>
-                <dt>What I'm learning from it</dt>
-                <dd>How a web project fits together with a frontend and a backend folder, and how commit conventions keep a project's history readable.</dd>
-              </div>
-            </dl>
-            <a class="project__link" href="https://github.com/subam-shrestha/roadmap-site" target="_blank" rel="noopener noreferrer">
-              View on GitHub
-              <span class="visually-hidden">: roadmap-site (opens in a new tab)</span>
-            </a>
-          </article>
-
-          <!-- Programs inside python-learning-projects, oldest to newest -->
-          <div class="programs" data-reveal>
-            <h3 class="programs__title">Inside python-learning-projects</h3>
-            <p class="programs__intro">Six programs, roughly in the order I built them. They get a little more ambitious each time.</p>
-
-            <ul class="program-list">
-              <li class="program">
-                <div class="program__main">
-                  <h4 class="program__name">Calculator</h4>
-                  <p>Basic arithmetic with input validation and handling for division by zero.</p>
-                </div>
-                <p class="program__meta">Functions, exception handling</p>
-                <a class="program__link" href="https://github.com/subam-shrestha/python-learning-projects/blob/main/01_foundations/calculator.py" target="_blank" rel="noopener noreferrer">View code<span class="visually-hidden"> for Calculator (opens in a new tab)</span></a>
-              </li>
-
-              <li class="program">
-                <div class="program__main">
-                  <h4 class="program__name">Fortune Teller</h4>
-                  <p>An interactive game that gives different fortunes depending on your answers.</p>
-                </div>
-                <p class="program__meta">Conditionals, string formatting</p>
-                <a class="program__link" href="https://github.com/subam-shrestha/python-learning-projects/blob/main/02_games/fortune_teller.py" target="_blank" rel="noopener noreferrer">View code<span class="visually-hidden"> for Fortune Teller (opens in a new tab)</span></a>
-              </li>
-
-              <li class="program">
-                <div class="program__main">
-                  <h4 class="program__name">Game Arcade</h4>
-                  <p>Rock Paper Scissors (best of three) and a number guessing game with hints, behind a small menu.</p>
-                </div>
-                <p class="program__meta">Loops, random module, exception handling</p>
-                <a class="program__link" href="https://github.com/subam-shrestha/python-learning-projects/blob/main/02_games/game_arcade.py" target="_blank" rel="noopener noreferrer">View code<span class="visually-hidden"> for Game Arcade (opens in a new tab)</span></a>
-              </li>
-
-              <li class="program">
-                <div class="program__main">
-                  <h4 class="program__name">Password Strength Checker</h4>
-                  <p>Scores a password out of five by checking its length and character types, then suggests improvements.</p>
-                </div>
-                <p class="program__meta">String methods, conditionals</p>
-                <a class="program__link" href="https://github.com/subam-shrestha/python-learning-projects/blob/main/03_projects/password_validator.py" target="_blank" rel="noopener noreferrer">View code<span class="visually-hidden"> for Password Strength Checker (opens in a new tab)</span></a>
-              </li>
-
-              <li class="program">
-                <div class="program__main">
-                  <h4 class="program__name">Contact Manager</h4>
-                  <p>A command-line tool to store, search, view and delete contacts using dictionaries.</p>
-                </div>
-                <p class="program__meta">Dictionaries, user input</p>
-                <a class="program__link" href="https://github.com/subam-shrestha/python-learning-projects/blob/main/03_projects/contact_manager.py" target="_blank" rel="noopener noreferrer">View code<span class="visually-hidden"> for Contact Manager (opens in a new tab)</span></a>
-              </li>
-
-              <li class="program">
-                <div class="program__main">
-                  <h4 class="program__name">To-Do List Manager</h4>
-                  <p>A command-line task manager where you can add, view, complete and delete tasks. Tasks are saved between runs.</p>
-                </div>
-                <p class="program__meta">Lists, dictionaries, file I/O</p>
-                <a class="program__link" href="https://github.com/subam-shrestha/python-learning-projects/blob/main/03_projects/todo_list.py" target="_blank" rel="noopener noreferrer">View code<span class="visually-hidden"> for To-Do List Manager (opens in a new tab)</span></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ JOURNEY ============ -->
-    <section class="section" id="journey" aria-labelledby="journey-title">
-      <div class="container section__inner">
-        <h2 class="section__title" id="journey-title">Journey</h2>
-        <div class="section__body" data-reveal>
-          <p class="section__intro">This portfolio is a work in progress, and so am I. Here's the path so far and where it's heading.</p>
-          <p class="legend">Filled dot: where I've been. Ring: where I am now. Hollow dot: where I'm heading.</p>
-
-          <ol class="timeline">
-            <li class="timeline__item timeline__item--done">
-              <h3 class="timeline__title">Learning programming</h3>
-              <p class="timeline__date">Started May 2026</p>
-              <p>Began Python with CS50P: variables, data types, conditionals, loops, functions and handling errors.</p>
-            </li>
-            <li class="timeline__item timeline__item--done">
-              <h3 class="timeline__title">Building Python projects</h3>
-              <p>Turned those first lessons into small programs: a calculator, a fortune teller, a game arcade and a password checker.</p>
-            </li>
-            <li class="timeline__item timeline__item--current">
-              <h3 class="timeline__title">Developing CS fundamentals</h3>
-              <p>Working with lists, dictionaries and files, then moving on to object-oriented programming, algorithms and problem solving.</p>
-            </li>
-            <li class="timeline__item timeline__item--current">
-              <h3 class="timeline__title">Building larger projects</h3>
-              <p>Moving from single scripts to projects with several parts, like roadmap-site, and getting better at Git and web development.</p>
-            </li>
-            <li class="timeline__item timeline__item--next">
-              <h3 class="timeline__title">Exploring AI/ML</h3>
-              <p>The direction I'm heading in. I'm not there yet, and I'd rather build the foundations properly first.</p>
-            </li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ GITHUB ============ -->
-    <section class="section" id="github" aria-labelledby="github-title">
-      <div class="container section__inner">
-        <h2 class="section__title" id="github-title">GitHub</h2>
-        <div class="section__body" data-reveal>
-          <p class="section__intro">The best way to follow my progress is to read the code itself.</p>
-          <a class="github-link" href="https://github.com/subam-shrestha" target="_blank" rel="noopener noreferrer">
-            <svg class="icon icon--large" aria-hidden="true"><use href="#icon-github"></use></svg>
-            <span class="github-link__text">
-              <span class="github-link__label">GitHub</span>
-              <span class="github-link__handle">@subam-shrestha</span>
-            </span>
-            <span class="visually-hidden">(opens in a new tab)</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ CONTACT ============ -->
-    <section class="section" id="contact" aria-labelledby="contact-title">
-      <div class="container section__inner">
-        <h2 class="section__title" id="contact-title">Contact</h2>
-        <div class="section__body" data-reveal>
-          <p class="section__intro">If you have feedback on my projects or advice for someone starting out, I'd be glad to hear it. GitHub is the best place to find me.</p>
-          <ul class="contact-list">
-            <li>
-              <a class="text-link" href="https://github.com/subam-shrestha" target="_blank" rel="noopener noreferrer">github.com/subam-shrestha<span class="visually-hidden"> (opens in a new tab)</span></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ============ FOOTER ============ -->
-  <footer class="site-footer">
-    <div class="container site-footer__inner">
-      <p>&copy; 2026 Subam Shrestha. Built while learning.</p>
-      <a class="text-link" href="https://github.com/subam-shrestha" target="_blank" rel="noopener noreferrer">GitHub<span class="visually-hidden"> (opens in a new tab)</span></a>
-    </div>
-  </footer>
-</body>
-</html>
+<section class="sec contact" id="contact"><p class="label rv">04 — Contact</p><h2 class="rv big">Let's <em>build</em> something.</h2>
+ <div class="links rv"><a href="https://github.com/subam-shrestha" target="_blank" rel="noopener">GitHub ↗</a><a href="https://www.linkedin.com/in/YOUR-HANDLE" target="_blank" rel="noopener">LinkedIn ↗</a><a href="mailto:you@example.com">Email ↗</a></div>
+ <div class="reflex rv"><button id="rt" type="button">Reflex test — press to start</button><span id="rtout" aria-live="polite"></span></div>
+ <footer>© <span id="yr"></span> Subam Shrestha</footer>
+</section>
+</main>
+<script type="module" src="js/main.js"></script>
+</body></html>
