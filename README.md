@@ -6,7 +6,10 @@ Static site (GitHub Pages ready). Three.js loads from jsDelivr; the sword is `as
 
 ## Edit
 - Email / LinkedIn: replace `you@example.com` and `YOUR-HANDLE` in `index.html` (Contact).
-- Add a Journey milestone: copy an `<li class="rv">` in `#journey`.
+
 - Sword tip pointing down? Set `FLIP = true` in `js/three-scene.js`.
 - Project screenshots: none yet. Add images to `assets/images/` and extend `.proj` when you have real ones.
 - GLB is ~8 MB; compress textures (e.g. `gltf-transform optimize --texture-compress webp`) for faster loads.
+
+## Interactions
+Sword regenerates on load (dissolve shader + sparks). `↻ Regenerate` or the Konami code replays it. Games live in `js/interactions.js` (Slash, Reflex, Guess, Duel).
